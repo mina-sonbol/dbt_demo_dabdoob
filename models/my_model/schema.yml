@@ -1,0 +1,13 @@
+
+version: 2
+
+sources:
+  - name: my_model_from_invoice
+    description: "A starter dbt model"
+    database: dabdoob-warehouse
+    schema: dabdoob_staging
+
+    tables:
+      - name: invoice
+
+

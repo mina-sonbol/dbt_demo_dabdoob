@@ -1,0 +1,14 @@
+dbt_demo_run:
+  outputs:
+    dev:
+      dataset: dabdoob_bi
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /home/dbt_demo/dabdoob-warehouse-03cd3cf655a1.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: dabdoob-warehouse
+      threads: 4
+      type: bigquery
+  target: dev
